@@ -9,6 +9,7 @@ return {
     -- second key is the lefthand side of the map
     -- mappings seen under group name "Buffer"
     [";"] = { ":" },
+    ["<leader>pf"] = { "<cmd>echo expand('%')<cr>", desc = "Print file path" },
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
       function()
