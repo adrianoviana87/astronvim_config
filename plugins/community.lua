@@ -22,4 +22,5 @@ return {
       },
     },
   },
+  { import = "astrocommunity.motion.nvim-surround" }
 }
