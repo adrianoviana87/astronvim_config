@@ -9,6 +9,7 @@ return {
     signcolumn = "auto",   -- sets vim.opt.signcolumn to auto
     wrap = false,          -- sets vim.opt.wrap
     scrolloff = 1,
+    undofile = false,       -- Disable persistent undo
   },
   g = {
     mapleader = " ",                 -- sets vim.g.mapleader
