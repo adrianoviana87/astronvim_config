@@ -10,6 +10,7 @@ return {
     wrap = false,          -- sets vim.opt.wrap
     scrolloff = 1,
     undofile = false,       -- Disable persistent undo
+    cursorline = false,
   },
   g = {
     mapleader = " ",                 -- sets vim.g.mapleader
