@@ -7,6 +7,8 @@ return {
     number = true,         -- sets vim.opt.number
     spell = false,         -- sets vim.opt.spell
     signcolumn = "auto",   -- sets vim.opt.signcolumn to auto
+    -- removes the cursor highlighting for the current line
+    cursorline = false,    -- sets vim.opt.cursorline
     wrap = false,          -- sets vim.opt.wrap
     scrolloff = 1,
     undofile = false,       -- Disable persistent undo
