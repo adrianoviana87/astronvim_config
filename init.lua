@@ -18,7 +18,7 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "astrodark",
+  colorscheme = "astrolight",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -70,6 +70,8 @@ return {
   polish = function()
     if vim.g.neovide then
       vim.o.guifont = "CaskaydiaCove Nerd Font:h12"
+      vim.g.neovide_cursor_animate_in_insert_mode = true
+      vim.g.neovide_remember_window_size = true
     end
     -- Set up custom filetypes
     -- vim.filetype.add {
