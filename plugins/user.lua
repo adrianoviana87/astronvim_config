@@ -11,7 +11,15 @@ return {
   -- },
   -- add xiyaowong/transparent.nvim without lazy loading
   {
+    "rktjmp/lush.nvim",
+    lazy = false,
+  },
+  {
     "xiyaowong/transparent.nvim",
+    lazy = false,
+  },
+  {
+    "kartikp10/noctis.nvim",
     lazy = false,
   }
 }
