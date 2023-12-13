@@ -21,5 +21,13 @@ return {
   {
     "kartikp10/noctis.nvim",
     lazy = false,
+  },
+  {
+    "clinstid/eink.vim",
+    lazy = false,
+  },
+  {
+    "yorickpeterse/vim-paper",
+    lazy = false,
   }
 }

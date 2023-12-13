@@ -18,7 +18,11 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "noctis",
+  -- colorscheme = "github_light",
+  colorscheme = "github_dark_high_contrast",
+  -- colorscheme = "github_light_high_contrast",
+  -- colorscheme = "eink",
+  -- colorscheme = "catppuccin",
 
   plugins = {
     {
