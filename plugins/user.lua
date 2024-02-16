@@ -29,5 +29,13 @@ return {
   {
     "yorickpeterse/vim-paper",
     lazy = false,
+  },
+  {
+    "nvim-lua/plenary.nvim",
+    lazy = false,
+  },
+  {
+    "ThePrimeagen/harpoon",
+    lazy = false,
   }
 }

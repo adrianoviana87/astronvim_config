@@ -82,6 +82,8 @@ return {
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
+    require("telescope").load_extension('harpoon')
+
     if vim.g.neovide then
       vim.o.guifont = "CaskaydiaCove Nerd Font:h12"
       vim.g.neovide_cursor_animate_in_insert_mode = true
@@ -99,5 +101,44 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
+    -- changes to the colorscheme
+    -- Use bold and italics for syntax highlighting
+    vim.cmd[[
+      highlight link Comment       SpecialComment
+      highlight link Constant      Type
+      highlight link Function      Type
+      highlight link Keyword       Type
+      highlight link String        Type
+      highlight link Statement     Type
+      highlight link Type          Type
+      highlight link Operator      Type
+      highlight link Exception     Type
+      highlight link PreProc       Type
+      highlight link Identifier    Type
+      highlight link Special       Type
+      highlight link SpecialChar   Type
+      highlight link Underlined    Type
+      highlight link Ignore        Type
+      highlight link Error         Type
+    ]]
+
+    -- Enable bold and italics
+    vim.cmd[[highlight Comment       gui=italic]]
+    vim.cmd[[highlight Constant      gui=italic]]
+    vim.cmd[[highlight Function      gui=bold]]
+    vim.cmd[[highlight Keyword       gui=italic]]
+    vim.cmd[[highlight String        gui=italic]]
+    vim.cmd[[highlight Statement     gui=italic]]
+    vim.cmd[[highlight Type          gui=bold]]
+    vim.cmd[[highlight Operator      gui=bold]]
+    vim.cmd[[highlight Exception     gui=bold]]
+    vim.cmd[[highlight PreProc       gui=italic]]
+    vim.cmd[[highlight Identifier    gui=bold]]
+    vim.cmd[[highlight Special       gui=italic]]
+    vim.cmd[[highlight SpecialChar   gui=bold]]
+    vim.cmd[[highlight Underlined    gui=italic]]
+    vim.cmd[[highlight Ignore        gui=bold]]
+    vim.cmd[[highlight Error         gui=bold]]
+
   end,
 }
