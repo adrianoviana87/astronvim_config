@@ -23,6 +23,11 @@ return {
     -- nnoremap ( (zz
     ["("] = { "(zz" },
     [")"] = { ")zz" },
+    ["<leader>xx"] = { "0f[lrx", desc = "Check checkbox"},
+    ["<leader>xu"] = { "0f[lr ", desc= "Uncheck checkbox" },
+    ["<leader>xa"] = { "0wF-a [ ]<esc>", desc = "Add checkbox" },
+    ["<leader>xo"] = { "0/http<cr>yi):!xdg-open <c-r>0<cr><esc>", desc = "Open link" },
+    ["<leader>xn"] = { "0o- [ ] ", desc = "New Task Below" },
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },

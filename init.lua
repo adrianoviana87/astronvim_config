@@ -82,12 +82,24 @@ return {
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
+    require('transparent').clear_prefix('NeoTree')
+    require('transparent').clear_prefix('BufferLine')
     require("telescope").load_extension('harpoon')
 
     if vim.g.neovide then
       vim.o.guifont = "CaskaydiaCove Nerd Font:h12"
       vim.g.neovide_cursor_animate_in_insert_mode = true
       vim.g.neovide_remember_window_size = true
+      vim.g.neovide_floating_blur_amount_x = 2.0
+      vim.g.neovide_floating_blur_amount_y = 2.0
+      vim.g.neovide_scroll_animation_length = 0.3
+      vim.g.neovide_scroll_animation_far_lines = 2
+      vim.g.neovide_cursor_animation_length = 0.13
+      vim.g.neovide_cursor_antialiasing = true
+      vim.g.neovide_cursor_animate_in_insert_mode = true
+      vim.g.neovide_cursor_vfx_mode = "railgun"
+      vim.g.neovide_cursor_vfx_particle_lifetime = 3
+      vim.g.neovide_cursor_vfx_particle_density = 20
     end
     -- Set up custom filetypes
     -- vim.filetype.add {
@@ -102,6 +114,7 @@ return {
     --   },
     -- }
     -- changes to the colorscheme
+
     -- Use bold and italics for syntax highlighting
     vim.cmd[[
       highlight link Comment       SpecialComment
