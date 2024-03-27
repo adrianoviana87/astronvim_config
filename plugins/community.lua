@@ -6,6 +6,12 @@ return {
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.colorscheme.github-nvim-theme" },
   { import = "astrocommunity.completion.copilot-lua" },
+  { import = "astrocommunity.pack.bash" },
+  { import = "astrocommunity.pack.html-css" },
+  { import = "astrocommunity.pack.markdown" },
+  { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.toml" },
+  { import = "astrocommunity.pack.ruby" },
   {
     "copilot.lua",
     opts = {
